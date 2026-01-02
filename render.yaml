@@ -1,8 +1,8 @@
 services:
   - type: web
-    name: kali-linux-gui
+    name: kali-terminal
     runtime: docker
-    plan: starter
+    plan: free
     envVars:
       - key: PORT
-        value: 54321  # This tells Render to route traffic to this container port
+        value: 54321
