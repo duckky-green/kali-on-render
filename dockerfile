@@ -1,17 +1,15 @@
 FROM kalilinux/kali-rolling
 
-ENV DEBIAN_FRONTEND=noninteractive
-ENV USER=root
-
+# Install ttyd and essential terminal tools
 RUN apt-get update && apt-get install -y \
-    kali-desktop-xfce \
-    novnc \
-    tigervnc-standalone-server \
-    dbus-x11 \
+    ttyd \
+    kali-linux-headless \
+    curl \
+    git \
     && apt-get clean
 
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-
+# Render uses the PORT environment variable
 EXPOSE 54321
-CMD ["/entrypoint.sh"]
+
+# Start ttyd on your custom port, launching a bash shell
+CMD ["ttyd", "-p", "54321", "bash"]
