@@ -48,12 +48,13 @@ OS	Kali Linux (Rolling)
 Desktop	XFCE4
 Default User	root
 
-##⚠️ Important Considerations
+## ⚠️ Important Considerations
 
-###[!WARNING]
+### [!WARNING]
 Ephemeral Storage: Render's file system is temporary. Files will be deleted when the service restarts. To save work, attach a Render Disk.
 
-###[!TIP]
+### [!TIP]
 Performance: For a smoother GUI experience, use at least the Starter instance (2GB RAM). The Free tier (512MB) may experience lag or crashes during heavy tool usage.
-📜 License
+
+## 📜 License
 This project is for educational and authorized security testing purposes only. Please adhere to the Kali Linux Professional Code of Conduct.
