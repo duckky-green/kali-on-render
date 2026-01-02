@@ -24,8 +24,7 @@ A lightweight, high-performance **Kali Linux** deployment optimized for **Render
 2. Ensure your `Dockerfile` is in the root directory.
 
 ### 2. Deploy to Render
-1. Go to the [Render Dashboard]([![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](render.com)
-).
+1. Go to the [Render Dashboard]([![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](render.com/deploy).
 2. Select **New +** > **Web Service**.
 3. Connect your forked repository.
 4. Set **Runtime** to `Docker`.
