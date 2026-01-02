@@ -22,5 +22,4 @@ vncserver :1 -geometry 1280x720 -depth 24\n\
 
 # Expose the noVNC port
 EXPOSE 54321
-
 CMD ["/entrypoint.sh"]
