@@ -2,7 +2,7 @@ services:
   - type: web
     name: kali-linux-gui
     runtime: docker
-    plan: free # Note: GUI may be slow on Free tier (512MB RAM)
+    plan: starter
     envVars:
       - key: PORT
-        value: 54321
+        value: 54321  # This tells Render to route traffic to this container port
